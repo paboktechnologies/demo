@@ -1,0 +1,211 @@
+HTML Attributes
+1. What are HTML Attributes?
+
+HTML attributes provide additional information about HTML elements.
+
+Important Points
+All HTML elements can have attributes.
+Attributes provide extra information about elements.
+Attributes are always specified in the opening tag.
+Attributes usually come in name/value pairs.
+Syntax
+<tagname attribute="value">Content</tagname>
+Example
+<a href="https://www.google.com">Visit Google</a>
+
+Here:
+
+href → Attribute name
+https://www.google.com → Attribute value
+2. The href Attribute
+
+The <a> (Anchor) tag defines a hyperlink.
+
+The href attribute specifies the URL of the page the link goes to.
+
+Syntax
+<a href="URL">Link Text</a>
+Example
+<a href="https://www.google.com">
+    Visit Google
+</a>
+
+When the user clicks the link, it opens Google.
+
+3. The src Attribute
+
+The <img> tag is used to display images in an HTML page.
+
+The src attribute specifies the path of the image.
+
+Syntax
+<img src="image.jpg">
+Example
+<img src="girl.jpg">
+
+Here:
+
+img → Image tag
+src → Source of the image
+girl.jpg → Image file name
+4. Types of URLs in src Attribute
+
+There are two types of URLs:
+
+1. Absolute URL
+
+Links to an image hosted on another website.
+
+Example
+<img src="https://www.w3schools.com/images/img_girl.jpg">
+
+Characteristics:
+
+Contains complete website address.
+Includes protocol (https://).
+Used for external resources.
+2. Relative URL
+
+Links to an image stored inside your website.
+
+Example 1
+<img src="girl.jpg">
+
+The image is in the same folder as the HTML file.
+
+Example 2
+<img src="images/girl.jpg">
+
+The image is inside the images folder.
+
+Example 3
+<img src="/images/girl.jpg">
+
+The image path starts from the root directory of the website.
+
+5. width and height Attributes
+
+The <img> tag can use width and height attributes to specify the image size.
+
+Example
+<img src="girl.jpg" width="500" height="600">
+
+Here:
+
+width="500" → Image width is 500 pixels
+height="600" → Image height is 600 pixels
+6. The alt Attribute
+
+The alt attribute provides alternate text for an image.
+
+The text is displayed when:
+
+The image cannot be loaded.
+The internet connection is slow.
+Screen readers are used.
+Example
+<img src="girl.jpg" alt="Girl with a jacket">
+
+If the image is missing, the browser displays:
+
+Girl with a jacket
+Why use alt?
+Improves accessibility.
+Helps search engines understand images.
+Provides a fallback when images fail to load.
+7. The style Attribute
+
+The style attribute is used to apply CSS styles directly to an HTML element.
+
+You can change:
+
+Text color
+Font size
+Background color
+Border
+Alignment
+Example
+<p style="color:red;">
+    This is a red paragraph.
+</p>
+More Examples
+<h1 style="color:blue;">
+    Welcome
+</h1>
+
+<p style="font-size:20px;">
+    This text is larger.
+</p>
+
+<p style="background-color:yellow;">
+    Highlighted Text
+</p>
+8. The lang Attribute
+
+The lang attribute specifies the language of the webpage.
+
+It is placed inside the <html> tag.
+
+This helps:
+
+Search engines understand the page language.
+Screen readers pronounce words correctly.
+Browsers provide better translations.
+Example
+<!DOCTYPE html>
+
+<html lang="en">
+
+<body>
+
+<h1>Hello World!</h1>
+
+</body>
+
+</html>
+
+Here:
+
+en → English
+Language with Country Code
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<body>
+
+<h1>Hello World!</h1>
+
+</body>
+
+</html>
+
+Here:
+
+en → English language
+US → United States
+9. The title Attribute
+
+The title attribute provides extra information about an element.
+
+When the user moves the mouse over the element, a tooltip appears.
+
+Example
+<p title="I'm a tooltip">
+    This is a paragraph.
+</p>
+Output
+
+When you hover the mouse over the paragraph, a small popup appears:
+
+I'm a tooltip
+Summary of HTML Attributes
+Attribute	Used In	Purpose
+href	<a>	Specifies link destination
+src	<img>	Specifies image source
+width	<img>	Sets image width
+height	<img>	Sets image height
+alt	<img>	Alternative text for image
+style	Any element	Adds CSS styles
+lang	<html>	Specifies webpage language
+title	Any element	Shows tooltip text
